@@ -52,4 +52,4 @@ http.createServer((req, res) => {
   if (!file.startsWith(root) || !fs.existsSync(file) || !mime[path.extname(file)]) {res.writeHead(404); return res.end('Not found');}
   res.writeHead(200, {'Content-Type': mime[path.extname(file)] || 'application/octet-stream'});
   fs.createReadStream(file).pipe(res);
-}).listen(3000, () => console.log('Open http://localhost:3000'));
+}).listen(process.env.PORT || 3000, () => console.log('Server is running'));

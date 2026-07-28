@@ -24,7 +24,7 @@
     <section class="details" aria-label="Trial details">
       <article><span>DATES</span><strong>12 – 14</strong><p>August 2026</p></article>
       <article><span>REPORTING TIME</span><strong>8:30 AM</strong><p>Onwards</p></article>
-      <article><span>TRIAL FEE</span><strong>₹500</strong><p>Pay via QR</p></article>
+      <article><span>TRIAL FEE</span><strong>₹500</strong><p>Cash payment at trial</p></article>
       <article><span>VENUE</span><strong>Santragachi</strong><p>BNR Ground</p></article>
     </section>
 
@@ -55,14 +55,7 @@
           <label id="bowling-hand-label">Bowling hand<select name="bowlingHand"><option value="">Select</option><option>Right-arm bowler</option><option>Left-arm bowler</option></select></label>
         </div>
         <label>Home address<textarea name="address" required placeholder="House / area / city"></textarea></label>
-        <section class="payment" aria-label="Payment details">
-          <p class="payment-title">PAYMENT · ₹500</p>
-          <div class="payment-box">
-            <img class="payment-qr" src="payment-qr.png" alt="PhonePe QR code for ₹500 trial fee">
-            <div><strong>Scan and pay via PhonePe / any UPI app</strong><p>Pay the trial fee of <b>₹500</b> to <b>Pradip Mondal</b>.</p><p class="payment-note">After payment, enter the UTR number below and submit the form.</p></div>
-          </div>
-          <label>UPI transaction / UTR number<input name="utr" required placeholder="Enter 12-digit payment reference"></label>
-        </section>
+        <section class="payment" aria-label="Payment details"><p class="payment-title">TRIAL FEE · ₹500</p><p class="cash-note">Please bring <b>₹500 cash</b> and pay at the trial venue during reporting.</p></section>
         <label class="check"><input name="consent" type="checkbox" required><span>I confirm that the above information is correct and I agree to attend the trials on the announced dates.</span></label>
         <button class="button submit" type="submit">Submit registration <span>→</span></button>
         <p id="status" role="status"></p>

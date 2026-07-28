@@ -1,0 +1,5 @@
+{
+  "name": "c15-cricket-trials",
+  "private": true,
+  "dependencies": {"nodemailer": "^6.9.16"}
+}

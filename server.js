@@ -37,7 +37,7 @@ http.createServer((req, res) => {
     req.on('end', async () => {
       try {
         const data = JSON.parse(body);
-        if (!data.name || !data.email || !data.utr) throw new Error('Missing required data');
+        if (!data.name || !data.email) throw new Error('Missing required data');
         const records = readRecords();
         const registrationNumber = `C15-2026-${String(records.length + 1).padStart(4, '0')}`;
         const entry = {...data, registrationNumber, submittedAt: new Date().toISOString()};
